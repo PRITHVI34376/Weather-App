@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+  <!-- 1st page box  -->
+  <div id="maincontent" >
+  <div class="mainbox mainbox1">
+    <div id="weatherimage"><img src="images/clouds.png" id="weather" alt=""></div>
+    <h1 id="h1" >Weather</h1>
+    <h2 id="h2" >ForeCasts</h2>
+    <button id="start" >Get Start</button>
+  </div>
+
+  <!-- 2nd page box -->
+  <div class="mainbox mainbox2 inactive">
+    <div id="searchbar">
+      <input type="text" placeholder="Enter the City" id="searchbox" >
+      <img src="images/search.png" alt="search icon" id="search_icon" >
+    </div>
+    <div>
+      <div><img  id="weather_icon" src="images/clear.png" alt="not found"></div>
+      <p id="description" >Partly Clear</p>
+    </div>
+    <div id="temperature" >32°C</div>
+    <div id="city_name" >Delhi</div>
+    <div id="small_weather_info" >
+   <div id="haze_content">
+
+    <img id="haze" src="images/wind.png" alt="">
+
+    <div class="haze_text">
+      <p id="id_haze">0 km/h</p>
+      <p>Wind</p>
+    </div>
+
+  </div>
+    <div id="mist_content">
+
+    <img id="mist" src="images/humidity.png" alt="">
+
+    <div class="mist_text">
+      <p id="id_mist">7%</p>
+      <p>Humidity</p>
+    </div>
+
+  </div>
+  </div>
+  </div> <!-- mainbox2 closes here -->
+  <!-- 3rd page box -->
+  <div class="mainbox mainbox3 inactive">
+    <p id="id_404" >404</p> <br>
+    <p id="page_not_found" >Oops! Page Not Found <br> The Page you're looking for dosen't exist or has been moved</p>
+    <button id="go_home" >Go Home</button>
+  </div>
+  </div>
+
+  <script src="weather.js" ></script>
+</body>

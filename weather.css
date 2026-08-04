@@ -1,0 +1,282 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  font-family: 'Times New Roman', Times, serif;
+}
+body{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image:url("images/jules-marvin-eguilos-xLNl6CWIJng-unsplash.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  backdrop-filter:blur(5px);
+}
+.mainbox{
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 40px;
+  margin-top: 3%;
+  margin-left:0 auto;
+  justify-content: center;
+  height: 650px;
+  width: 500px;
+  text-align: center;
+}
+.mainbox::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("images/mahdi-soheili-3wxiKqC9KSA-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(7px);
+  z-index: -1;
+}
+.mainbox > *{
+  position: relative;
+  z-index: 1;
+}
+#maincontent{
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+#weather{
+  height: 250px;
+  width: 250px;
+  position: center;
+  justify-content: center;
+}
+#weatherimage{
+  margin-top: 20%;
+  text-align: center;
+}
+#h1{
+  font-weight: 500px;
+  font-size: 60px;
+  font-family: cursive;
+}
+#h2{
+  margin-top: none;
+  font-size: 65px;
+  font-family: cursive;
+  color: rgb(134, 134, 17);
+}
+#start{
+  margin-top: 6%;
+  height: 50px;
+  width: 175px;
+  background-color: yellow;
+  border-radius: 40px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+#start:hover{
+    background-color: rgb(202, 22, 22);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* box 1 ka kaam khatam yahan css done */
+#searchbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#search_icon{
+  height: 30px;
+  width: 25px;
+  margin-top: 10%;
+  background-color: white;
+  cursor: pointer;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+#searchbox{
+  height: 30px;
+  width: 250px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  margin-top: 10%;
+}
+#weather_icon{
+  height: 150px;
+  width: 150px;
+  position: center;
+  justify-content: center;
+}
+#description{
+  margin-top: 0%;
+  font-size: 20px;
+  font-weight: bold;
+}
+#temperature{
+  font-size: 70px;
+  margin-top: 5%;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#city_name{
+  margin-top: 0%;
+  font-size: 65px;
+  color: rgb(134, 134, 17);
+}
+#small_weather_info{
+  display: flex;
+  margin-top: 10%;
+}
+#haze_content,
+#mist_content{
+  display:flex;
+  align-items:center;
+  gap:25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.haze_text,
+.mist_text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#haze,
+#mist{
+    width:130px;
+    height:130px;
+    margin-left: 25px;
+}
+/* 2nd box ka kaam yahan khatam  */
+
+#id_404{
+  margin-top: 60%;
+  font-size: 90px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#page_not_found{
+  font-size: 20px;
+}
+#go_home{
+  margin-top: 6%;
+  height: 50px;
+  width: 175px;
+  background-color: yellow;
+  border-radius: 40px;
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+#go_home:hover{
+  background-color: rgb(202, 22, 22);
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.inactive{
+  display: none;
+}
+@media (max-width:768px){
+
+.mainbox{
+    width:95%;
+    min-height:auto;
+    padding:20px;
+}
+
+#weather{
+    width:180px;
+    height:180px;
+}
+
+#weather_icon{
+    width:120px;
+    height:120px;
+}
+
+#h1{
+    font-size:42px;
+}
+
+#h2{
+    font-size:45px;
+}
+
+#temperature{
+    font-size:55px;
+}
+
+#city_name{
+    font-size:42px;
+}
+
+#searchbox{
+    width:75%;
+}
+
+#small_weather_info{
+    flex-direction:column;
+    gap:20px;
+    align-items:center;
+}
+
+#haze,
+#mist{
+    width:70px;
+    height:70px;
+    margin-left:0;
+}
+
+#id_404{
+    font-size:60px;
+}
+}
+@media (max-width:480px){
+
+#h1{
+    font-size:34px;
+}
+
+#h2{
+    font-size:36px;
+}
+
+#temperature{
+    font-size:42px;
+}
+
+#city_name{
+    font-size:34px;
+}
+
+#searchbox{
+    width:70%;
+}
+
+#start,
+#go_home{
+    width:150px;
+    height:45px;
+    font-size:20px;
+}
+
+}
